@@ -1,0 +1,435 @@
+<!DOCTYPE html><html lang="uk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Luné Beauty — преміальний салон краси</title><link rel="stylesheet" href="style.css"></head><body><div class="marble"></div><div class="orb one"></div><div class="orb two"></div><div class="sparkles"></div><div class="cursor-glow"></div><div class="preloader"><div class="preloader-box"><img src="images/moon-icon.svg" alt="moon"><h2>LUNÉ</h2><p>BEAUTY STUDIO</p></div></div><header class="header">
+  <a class="logo" href="index.html"><img src="images/logo.svg" alt="Luné Beauty"></a>
+  <button class="menu-btn" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+  <nav class="nav">
+    <a href="index.html">Головна</a>
+    <a href="about.html">Про нас</a>
+    <a href="services.html">Послуги</a>
+    <a href="cosmetics.html">Косметика</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="contacts.html">Контакти</a>
+    <a class="btn nav-book" href="booking.html">Записатися</a>
+  </nav>
+</header>
+
+<main class="home-main cosmetics-page">
+
+<section class="page-hero cosmetics-hero reveal">
+  <span class="eyebrow">Luné cosmetics</span>
+  <h1>Наша косметика</h1>
+  <p>Наша косметика власного виробництва створена з натуральних компонентів, делікатних ароматів та професійних формул для щоденного beauty-догляду. Ми пропонуємо як власну лінійку Luné Beauty, так і ретельно підібрані та перевірені товари професійних beauty-брендів для догляду за шкірою, волоссям і тілом.</p>
+</section>
+
+<button class="cart-floating" type="button" onclick="luneToggleCart()" aria-label="Відкрити кошик">
+  <span class="cart-icon">🛒</span><span id="cart-count">0</span>
+</button>
+
+<section class="cosmetics-shop-section">
+  <div class="cos-section-head reveal">
+    <span class="eyebrow">Luné line</span>
+    <h2>Власна косметика Luné Beauty</h2>
+    <p>Авторська добірка догляду для волосся, шкіри та тіла. Кожен продукт створений як маленький домашній beauty-ритуал.</p>
+  </div>
+  <div class="cos-products-grid">
+    <article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?q=80&w=900&auto=format&fit=crop" alt="Moon Silk Hair Oil"></div>
+  <div class="cos-product-body">
+    <h3>Moon Silk Hair Oil</h3>
+    <p>Олійка для блиску, м’якості та гладкості волосся після укладки.</p>
+    <p class="cos-scent">Аромат: ваніль, білий мускус</p>
+    <div class="cos-product-bottom"><span class="cos-price">420 грн</span><button class="cos-add" onclick="luneAddToCart('Moon Silk Hair Oil','420 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=900&auto=format&fit=crop" alt="Velvet Body Milk"></div>
+  <div class="cos-product-body">
+    <h3>Velvet Body Milk</h3>
+    <p>Ніжне молочко для тіла з легкою текстурою та ефектом шовкової шкіри.</p>
+    <p class="cos-scent">Аромат: кокос, півонія</p>
+    <div class="cos-product-bottom"><span class="cos-price">390 грн</span><button class="cos-add" onclick="luneAddToCart('Velvet Body Milk','390 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=900&auto=format&fit=crop" alt="Glow Face Cream"></div>
+  <div class="cos-product-body">
+    <h3>Glow Face Cream</h3>
+    <p>Зволожувальний крем для щоденного сяйва та комфортного відчуття на шкірі.</p>
+    <p class="cos-scent">Аромат: троянда, білий персик</p>
+    <div class="cos-product-bottom"><span class="cos-price">450 грн</span><button class="cos-add" onclick="luneAddToCart('Glow Face Cream','450 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1619451427882-6aaaded0cc61?q=80&w=900&auto=format&fit=crop" alt="Rose Body Scrub"></div>
+  <div class="cos-product-body">
+    <h3>Rose Body Scrub</h3>
+    <p>Делікатний скраб для тіла з м’яким поліруванням і доглядовими оліями.</p>
+    <p class="cos-scent">Аромат: троянда, карамель</p>
+    <div class="cos-product-bottom"><span class="cos-price">360 грн</span><button class="cos-add" onclick="luneAddToCart('Rose Body Scrub','360 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=900&auto=format&fit=crop" alt="Nude Lip Balm"></div>
+  <div class="cos-product-body">
+    <h3>Nude Lip Balm</h3>
+    <p>Бальзам для губ із натуральними оліями для живлення та ніжного блиску.</p>
+    <p class="cos-scent">Аромат: ванільний крем</p>
+    <div class="cos-product-bottom"><span class="cos-price">220 грн</span><button class="cos-add" onclick="luneAddToCart('Nude Lip Balm','220 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1620917669809-1af0497965e8?q=80&w=900&auto=format&fit=crop" alt="Silk Hand Cream"></div>
+  <div class="cos-product-body">
+    <h3>Silk Hand Cream</h3>
+    <p>Крем для рук із м’яким фінішем, що швидко вбирається та не липне.</p>
+    <p class="cos-scent">Аромат: жасмин, мигдаль</p>
+    <div class="cos-product-bottom"><span class="cos-price">280 грн</span><button class="cos-add" onclick="luneAddToCart('Silk Hand Cream','280 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1585232351009-aa87416fca90?q=80&w=900&auto=format&fit=crop" alt="Crystal Hair Mask"></div>
+  <div class="cos-product-body">
+    <h3>Crystal Hair Mask</h3>
+    <p>Маска для відновлення волосся після фарбування, стайлінгу та сухості.</p>
+    <p class="cos-scent">Аромат: кокосове молоко</p>
+    <div class="cos-product-bottom"><span class="cos-price">520 грн</span><button class="cos-add" onclick="luneAddToCart('Crystal Hair Mask','520 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=900&auto=format&fit=crop" alt="Glow Mist"></div>
+  <div class="cos-product-body">
+    <h3>Glow Mist</h3>
+    <p>Освіжаючий міст для обличчя, який додає вологи протягом дня.</p>
+    <p class="cos-scent">Аромат: білий чай</p>
+    <div class="cos-product-bottom"><span class="cos-price">340 грн</span><button class="cos-add" onclick="luneAddToCart('Glow Mist','340 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=900&auto=format&fit=crop" alt="Relax Bath Foam"></div>
+  <div class="cos-product-body">
+    <h3>Relax Bath Foam</h3>
+    <p>Піна для ванни з м’яким SPA-ефектом для вечірнього ритуалу відпочинку.</p>
+    <p class="cos-scent">Аромат: лаванда, ваніль</p>
+    <div class="cos-product-bottom"><span class="cos-price">370 грн</span><button class="cos-add" onclick="luneAddToCart('Relax Bath Foam','370 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1607006483224-b7618cfd7781?q=80&w=900&auto=format&fit=crop" alt="Satin Shower Gel"></div>
+  <div class="cos-product-body">
+    <h3>Satin Shower Gel</h3>
+    <p>Парфумований гель для душу з делікатною піною та ніжним ароматом.</p>
+    <p class="cos-scent">Аромат: amber vanilla</p>
+    <div class="cos-product-bottom"><span class="cos-price">310 грн</span><button class="cos-add" onclick="luneAddToCart('Satin Shower Gel','310 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=900&auto=format&fit=crop" alt="Pearl Face Scrub"></div>
+  <div class="cos-product-body">
+    <h3>Pearl Face Scrub</h3>
+    <p>Скраб для обличчя з ензимним ефектом для гладкості та сяйва.</p>
+    <p class="cos-scent">Аромат: білий персик</p>
+    <div class="cos-product-bottom"><span class="cos-price">390 грн</span><button class="cos-add" onclick="luneAddToCart('Pearl Face Scrub','390 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=900&auto=format&fit=crop" alt="Luné Brow Fix Gel"></div>
+  <div class="cos-product-body">
+    <h3>Luné Brow Fix Gel</h3>
+    <p>Прозорий гель для фіксації брів із natural-ефектом без склеювання.</p>
+    <p class="cos-scent">Аромат: без аромату</p>
+    <div class="cos-product-bottom"><span class="cos-price">260 грн</span><button class="cos-add" onclick="luneAddToCart('Luné Brow Fix Gel','260 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?q=80&w=900&auto=format&fit=crop" alt="Lash Care Serum"></div>
+  <div class="cos-product-body">
+    <h3>Lash Care Serum</h3>
+    <p>Сироватка для вій для догляду, зміцнення та щоденного beauty-ритуалу.</p>
+    <p class="cos-scent">Аромат: ніжний квітковий</p>
+    <div class="cos-product-bottom"><span class="cos-price">480 грн</span><button class="cos-add" onclick="luneAddToCart('Lash Care Serum','480 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1602874801006-e26bfaa3e25c?q=80&w=900&auto=format&fit=crop" alt="Moon SPA Candle"></div>
+  <div class="cos-product-body">
+    <h3>Moon SPA Candle</h3>
+    <p>Аромасвічка для домашнього SPA, атмосфери спокою та тепла.</p>
+    <p class="cos-scent">Аромат: sandalwood, vanilla</p>
+    <div class="cos-product-bottom"><span class="cos-price">350 грн</span><button class="cos-add" onclick="luneAddToCart('Moon SPA Candle','350 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=900&auto=format&fit=crop" alt="Velvet Hair Perfume"></div>
+  <div class="cos-product-body">
+    <h3>Velvet Hair Perfume</h3>
+    <p>Парфум для волосся з легкою вуаллю аромату та доглянутим фінішем.</p>
+    <p class="cos-scent">Аромат: luxury powder</p>
+    <div class="cos-product-bottom"><span class="cos-price">560 грн</span><button class="cos-add" onclick="luneAddToCart('Velvet Hair Perfume','560 грн')">Додати</button></div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="cosmetics-shop-section recommended-shop">
+  <div class="cos-section-head reveal">
+    <span class="eyebrow">Selected care</span>
+    <h2>Рекомендована косметика</h2>
+    <p>Перевірені засоби професійних брендів, які ми радимо для продовження догляду вдома.</p>
+  </div>
+  <div class="cos-products-grid">
+    <article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1631730486784-5456119f69d9?q=80&w=900&auto=format&fit=crop" alt="Kérastase Nutritive Bain Satin"></div>
+  <div class="cos-product-body">
+    <h3>Kérastase Nutritive Bain Satin</h3>
+    <p>Професійний шампунь для сухого волосся, м’якості та живлення.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">1450 грн</span><button class="cos-add" onclick="luneAddToCart('Kérastase Nutritive Bain Satin','1450 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=900&auto=format&fit=crop" alt="Olaplex No.3 Hair Perfector"></div>
+  <div class="cos-product-body">
+    <h3>Olaplex No.3 Hair Perfector</h3>
+    <p>Відомий догляд для відновлення пошкодженого волосся після фарбування.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">1290 грн</span><button class="cos-add" onclick="luneAddToCart('Olaplex No.3 Hair Perfector','1290 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=900&auto=format&fit=crop" alt="Moroccanoil Treatment"></div>
+  <div class="cos-product-body">
+    <h3>Moroccanoil Treatment</h3>
+    <p>Арганова олія для блиску, гладкості та доглянутого вигляду волосся.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">1650 грн</span><button class="cos-add" onclick="luneAddToCart('Moroccanoil Treatment','1650 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=900&auto=format&fit=crop" alt="La Roche-Posay Effaclar Gel"></div>
+  <div class="cos-product-body">
+    <h3>La Roche-Posay Effaclar Gel</h3>
+    <p>Очищувальний гель для комбінованої та проблемної шкіри.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">780 грн</span><button class="cos-add" onclick="luneAddToCart('La Roche-Posay Effaclar Gel','780 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=900&auto=format&fit=crop" alt="CeraVe Moisturizing Cream"></div>
+  <div class="cos-product-body">
+    <h3>CeraVe Moisturizing Cream</h3>
+    <p>Крем для глибокого зволоження та підтримки захисного бар’єру шкіри.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">690 грн</span><button class="cos-add" onclick="luneAddToCart('CeraVe Moisturizing Cream','690 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1601049676869-702ea24cfd58?q=80&w=900&auto=format&fit=crop" alt="Bioderma Sensibio H2O"></div>
+  <div class="cos-product-body">
+    <h3>Bioderma Sensibio H2O</h3>
+    <p>Міцелярна вода для делікатного очищення чутливої шкіри.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">550 грн</span><button class="cos-add" onclick="luneAddToCart('Bioderma Sensibio H2O','550 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?q=80&w=900&auto=format&fit=crop" alt="The Ordinary Niacinamide 10%"></div>
+  <div class="cos-product-body">
+    <h3>The Ordinary Niacinamide 10%</h3>
+    <p>Сироватка для рівнішого тону, балансу шкіри та доглянутого вигляду.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">430 грн</span><button class="cos-add" onclick="luneAddToCart('The Ordinary Niacinamide 10%','430 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1612817288388-6f916006741a?q=80&w=900&auto=format&fit=crop" alt="Laneige Lip Sleeping Mask"></div>
+  <div class="cos-product-body">
+    <h3>Laneige Lip Sleeping Mask</h3>
+    <p>Нічна маска для губ із м’яким ефектом відновлення.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">890 грн</span><button class="cos-add" onclick="luneAddToCart('Laneige Lip Sleeping Mask','890 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1626808642875-0aa545482dfb?q=80&w=900&auto=format&fit=crop" alt="Davines OI All In One Milk"></div>
+  <div class="cos-product-body">
+    <h3>Davines OI All In One Milk</h3>
+    <p>Догляд-молочко для термозахисту, блиску та легкого розчісування.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">1350 грн</span><button class="cos-add" onclick="luneAddToCart('Davines OI All In One Milk','1350 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=900&auto=format&fit=crop" alt="L’Oréal Professionnel Absolut Repair"></div>
+  <div class="cos-product-body">
+    <h3>L’Oréal Professionnel Absolut Repair</h3>
+    <p>Маска для глибокого відновлення та гладкості пошкодженого волосся.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">980 грн</span><button class="cos-add" onclick="luneAddToCart('L’Oréal Professionnel Absolut Repair','980 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?q=80&w=900&auto=format&fit=crop" alt="Rituals Sakura Body Cream"></div>
+  <div class="cos-product-body">
+    <h3>Rituals Sakura Body Cream</h3>
+    <p>Крем для тіла у SPA-стилі з ніжним ароматом і щільною текстурою.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">1200 грн</span><button class="cos-add" onclick="luneAddToCart('Rituals Sakura Body Cream','1200 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1590439471364-192aa70c0b53?q=80&w=900&auto=format&fit=crop" alt="Nuxe Huile Prodigieuse"></div>
+  <div class="cos-product-body">
+    <h3>Nuxe Huile Prodigieuse</h3>
+    <p>Суха олія для тіла та волосся з преміальним ароматом.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">1400 грн</span><button class="cos-add" onclick="luneAddToCart('Nuxe Huile Prodigieuse','1400 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=900&auto=format&fit=crop" alt="Beauty of Joseon Relief Sun SPF50"></div>
+  <div class="cos-product-body">
+    <h3>Beauty of Joseon Relief Sun SPF50</h3>
+    <p>Сонцезахист для обличчя з легкою текстурою без важкого фінішу.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">720 грн</span><button class="cos-add" onclick="luneAddToCart('Beauty of Joseon Relief Sun SPF50','720 грн')">Додати</button></div>
+  </div>
+</article>
+<article class="cos-product-card recommend reveal">
+  <div class="cos-product-img"><img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?q=80&w=900&auto=format&fit=crop" alt="Gisou Honey Infused Hair Oil"></div>
+  <div class="cos-product-body">
+    <h3>Gisou Honey Infused Hair Oil</h3>
+    <p>Медова олія для блиску, гладкості та красивого фінішу волосся.</p>
+    <p class="cos-scent">Перевірений професійний догляд</p>
+    <div class="cos-product-bottom"><span class="cos-price">1750 грн</span><button class="cos-add" onclick="luneAddToCart('Gisou Honey Infused Hair Oil','1750 грн')">Додати</button></div>
+  </div>
+</article>
+  </div>
+</section>
+
+<aside class="cart-panel" id="cart-panel" aria-hidden="true">
+  <button class="cart-close" type="button" onclick="luneToggleCart()" aria-label="Закрити кошик">×</button>
+  <h2>Ваш кошик</h2>
+  <p class="cart-note">Редагуйте кількість товарів та оформлюйте beauty-замовлення.</p>
+  <div id="cart-items" class="cart-items-list"></div>
+  <div class="cart-total"><span>Разом:</span><strong id="cart-total">0 грн</strong></div>
+  <button class="btn cart-checkout-btn" type="button" onclick="luneOpenCheckout()">Оформити замовлення</button>
+
+  <form class="checkout-form" id="checkout-form" onsubmit="luneSubmitOrder(event)">
+    <h3>Оформлення замовлення</h3>
+    <input required name="name" type="text" placeholder="Ваше ім’я">
+    <input required name="phone" type="tel" placeholder="Телефон">
+    <select name="delivery" id="delivery-type" onchange="luneDeliveryChange()">
+      <option value="Самовивіз із салону">Самовивіз із салону</option>
+      <option value="Доставка Новою поштою">Доставка Новою поштою</option>
+    </select>
+    <div id="delivery-fields" class="delivery-fields">
+      <input name="city" type="text" placeholder="Місто">
+      <input name="post" type="text" placeholder="Відділення / поштомат Нової пошти">
+    </div>
+    <select name="payment">
+      <option>Оплата в салоні</option>
+      <option>Оплата при отриманні</option>
+      <option>Онлайн-оплата після підтвердження</option>
+    </select>
+    <textarea name="comment" placeholder="Коментар до замовлення"></textarea>
+    <button class="btn" type="submit">Придбати</button>
+  </form>
+</aside>
+</main>
+
+<script>
+let luneCart = JSON.parse(localStorage.getItem('luneCart') || '[]');
+function lunePriceToNumber(price){ return Number(String(price).replace(/[^0-9]/g,'')) || 0; }
+function luneSaveCart(){ localStorage.setItem('luneCart', JSON.stringify(luneCart)); luneUpdateCart(); }
+function luneAddToCart(name, price){
+  const item = luneCart.find(product => product.name === name);
+  if(item) item.qty += 1;
+  else luneCart.push({name, price, qty:1});
+  luneSaveCart();
+  luneMiniToast('Товар додано до кошика ✓');
+}
+function luneChangeQty(index, dir){
+  if(!luneCart[index]) return;
+  luneCart[index].qty += dir;
+  if(luneCart[index].qty <= 0) luneCart.splice(index,1);
+  luneSaveCart();
+}
+function luneRemoveItem(index){ luneCart.splice(index,1); luneSaveCart(); }
+function luneUpdateCart(){
+  const count = luneCart.reduce((sum,item)=>sum + item.qty, 0);
+  const total = luneCart.reduce((sum,item)=>sum + lunePriceToNumber(item.price) * item.qty, 0);
+  const countEl = document.getElementById('cart-count');
+  const totalEl = document.getElementById('cart-total');
+  const items = document.getElementById('cart-items');
+  if(countEl) countEl.textContent = count;
+  if(totalEl) totalEl.textContent = total + ' грн';
+  if(!items) return;
+  if(!luneCart.length){
+    items.innerHTML = '<p class="cart-empty">Кошик поки порожній.</p>';
+    return;
+  }
+  items.innerHTML = luneCart.map((item,index)=>`<div class="cart-item">
+    <div><strong>${item.name}</strong><small>${item.price}</small></div>
+    <div class="qty-box"><button type="button" onclick="luneChangeQty(${index},-1)">−</button><span>${item.qty}</span><button type="button" onclick="luneChangeQty(${index},1)">+</button></div>
+    <button class="remove-item" type="button" onclick="luneRemoveItem(${index})">×</button>
+  </div>`).join('');
+}
+function luneToggleCart(){
+  const panel = document.getElementById('cart-panel');
+  panel?.classList.toggle('active');
+  panel?.setAttribute('aria-hidden', panel.classList.contains('active') ? 'false' : 'true');
+}
+function luneOpenCheckout(){
+  if(!luneCart.length){ luneMiniToast('Додайте товар у кошик ✓'); return; }
+  document.getElementById('checkout-form')?.classList.add('active');
+}
+function luneDeliveryChange(){
+  const fields = document.getElementById('delivery-fields');
+  const type = document.getElementById('delivery-type')?.value || '';
+  if(fields) fields.style.display = type.includes('Доставка') ? 'grid' : 'none';
+}
+function luneSubmitOrder(event){
+  event.preventDefault();
+  event.target.reset();
+  luneCart = [];
+  luneSaveCart();
+  luneMiniToast('Замовлення оформлено ✓');
+  document.getElementById('checkout-form')?.classList.remove('active');
+}
+function luneMiniToast(text){
+  const toast = document.querySelector('.toast');
+  if(!toast) return;
+  toast.textContent = text;
+  toast.classList.add('show');
+  setTimeout(()=>toast.classList.remove('show'),2200);
+}
+luneUpdateCart();
+luneDeliveryChange();
+</script>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.svg" alt="Luné Beauty">
+      <p>Простір краси, де мінімалізм зустрічається з ніжністю, доглядом і впевненістю.</p>
+    </div>
+    <div>
+      <h3>Навігація</h3>
+      <a href="services.html">Послуги і прайс</a>
+      <a href="cosmetics.html">Косметика</a>
+      <a href="about.html">Майстри</a>
+      <a href="gallery.html">Галерея</a>
+    </div>
+    <div>
+      <h3>Контакти</h3>
+      <p>м. Полтава, вул. Європейська, 15</p>
+      <p>+38 (095) 000-00-00</p>
+      <p>@lune.beauty</p>
+    </div>
+    <div>
+      <h3>Графік</h3>
+      <p>Пн–Сб: 09:00–20:00</p>
+      <p>Нд: 10:00–18:00</p>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Luné Beauty. Luxury beauty space.</div>
+</footer><div class="toast"></div><script src="script.js"></script></body></html>

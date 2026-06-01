@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="uk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Контакти — Luné Beauty</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css"></head><body><div class="marble"></div><div class="orb one"></div><div class="orb two"></div><div class="sparkles"></div><div class="cursor-glow"></div><header class="header">
+  <a class="logo" href="index.html"><img src="images/logo.svg" alt="Luné Beauty"></a>
+  <button class="menu-btn" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+  <nav class="nav">
+    <a href="index.html">Головна</a>
+    <a href="about.html">Про нас</a>
+    <a href="services.html">Послуги</a>
+    <a href="cosmetics.html">Косметика</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="contacts.html">Контакти</a>
+    <a class="btn nav-book" href="booking.html">Записатися</a>
+  </nav>
+</header><main><section class="page-hero reveal"><span class="eyebrow">Find us</span><h1>Контакти</h1><p>Зв’яжіться з нами або залиште заявку, і адміністратор допоможе обрати зручний час.</p></section><section class="section contacts-clean-section">
+  <div class="contact-box contacts-two-col">
+    <div class="glass reveal contact-info-card">
+      <h2>Як нас знайти</h2>
+      <p><b>Адреса:</b> м. Полтава, вул. Європейська, 15</p>
+      <p><b>Телефон:</b> <a href="tel:+380950000000">+38 (095) 000-00-00</a></p>
+      <p><b>Instagram:</b> @lune.beauty</p>
+      <p><b>Графік:</b> Пн–Сб 09:00–20:00, Нд 10:00–18:00</p>
+
+      <div class="contact-map-box real-map-box">
+        <div id="luneLeafletMap"></div>
+      </div>
+    </div>
+
+    <div class="glass reveal contact-form-card">
+      <h2>Написати нам</h2>
+      <form class="form">
+        <input required placeholder="Ваше ім’я">
+        <input required type="tel" placeholder="Телефон">
+        <textarea placeholder="Повідомлення"></textarea>
+        <button class="btn" type="submit">Надіслати</button>
+      </form>
+    </div>
+  </div>
+</section></main><footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.svg" alt="Luné Beauty">
+      <p>Простір краси, де мінімалізм зустрічається з ніжністю, доглядом і впевненістю.</p>
+    </div>
+    <div>
+      <h3>Навігація</h3>
+      <a href="services.html">Послуги і прайс</a>
+      <a href="cosmetics.html">Косметика</a>
+      <a href="about.html">Майстри</a>
+      <a href="gallery.html">Галерея</a>
+    </div>
+    <div>
+      <h3>Контакти</h3>
+      <p>м. Полтава, вул. Європейська, 15</p>
+      <p>+38 (095) 000-00-00</p>
+      <p>@lune.beauty</p>
+    </div>
+    <div>
+      <h3>Графік</h3>
+      <p>Пн–Сб: 09:00–20:00</p>
+      <p>Нд: 10:00–18:00</p>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Luné Beauty. Luxury beauty space.</div>
+</footer><div class="toast"></div><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script></body></html>

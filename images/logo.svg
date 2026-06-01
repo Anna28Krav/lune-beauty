@@ -1,0 +1,9 @@
+<svg width="420" height="150" viewBox="0 0 420 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="g" x1="70" y1="10" x2="340" y2="140" gradientUnits="userSpaceOnUse"><stop stop-color="#F7D9C9"/><stop offset=".45" stop-color="#C79B64"/><stop offset="1" stop-color="#F6E7C8"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<path d="M75 26C43 36 24 67 31 99c7 32 38 53 70 47-25-7-45-28-51-55C44 64 54 40 75 26Z" fill="url(#g)" filter="url(#glow)"/>
+<path d="M86 42c10-8 24-10 36-4M96 117c13 3 27-1 38-10" stroke="#C79B64" stroke-width="2" stroke-linecap="round"/>
+<path d="M122 30l4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9ZM347 30l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z" fill="#D7B276"/>
+<text x="150" y="74" font-family="Georgia, 'Times New Roman', serif" font-size="48" letter-spacing="8" fill="#3B2D2A">LUNÉ</text>
+<line x1="154" y1="90" x2="338" y2="90" stroke="#C79B64" stroke-width="1"/>
+<text x="191" y="119" font-family="Arial, sans-serif" font-size="15" letter-spacing="8" fill="#8D6C60">BEAUTY</text>
+</svg>
